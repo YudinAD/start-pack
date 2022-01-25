@@ -1,0 +1,87 @@
+#home {
+    .header-search {
+        order: 3;
+    }
+
+    .header-search .search_field.active .form-control {
+        background-color: #FFFFFF;
+        border-color: #E3E3E3;
+        color: #000;
+    }
+    
+    .sticky-wrapper:not(.is-sticky) .header-search .search_field.active .form-control::placeholder {
+        color: #000 !important;
+    }
+
+    .search_black_screen.active {
+        z-index: 4;
+    }
+    
+    .header-search {
+        height: 45px;
+        top: 50%;
+        margin-top: -23px;
+        right: auto;
+        width: 100%;
+        max-width: 64%;
+        margin-left: 23%;
+
+        @media(max-width: 1150px) {
+            margin-left: 22%;
+        }
+
+        &.opened {
+            z-index: 5;
+        }
+
+        .search_field {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            visibility: hidden;
+            transition: visibility 0.2s ease-in;
+
+            &.active {
+                visibility: visible;
+            }
+        }
+
+        .search_field input.form-control {
+            border: none;
+            color: #000 !important;
+            border-radius: 0;
+            border-bottom: 1px solid #E3E3E3;
+            padding-left: 21px;
+            padding-right: 122px;
+            height: 45px;
+            font-size: 16px !important;
+        }
+
+        button {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            color: #000;
+            left: auto;
+            right: 0;
+            width: 45px;
+            max-width: 100%;
+            
+            svg {
+                fill: $header-search-fill;
+                stroke: $header-search-stroke;
+                transition: fill 0.2s ease-in, stroke 0.2s ease-in;
+            }
+
+            &:hover svg, 
+            &:focus svg {
+                fill: $header-search-fill-hover;
+                stroke: $header-search-stroke-hover;
+            }
+        }
+
+        @media(max-width:992px) {
+            display: none !important;
+        }
+    }
+}

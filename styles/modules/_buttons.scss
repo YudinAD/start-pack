@@ -1,0 +1,107 @@
+#home {
+    .btn:not(.btn-wish-list) {
+        border-radius: 0;
+    }
+
+    .btn.btn-theme:not(.btn-wish-list) {
+        font-weight: 400;
+        border-radius: 0;
+        background-color: $btn-theme-bg;
+        border-color: $btn-theme-border;
+        color: $btn-theme-color;
+
+        &:hover, &:focus {
+            background-color: $btn-theme-bg-hover;
+            border-color: $btn-theme-border-hover;
+            color: $btn-theme-color-hover;
+        }
+    }
+
+    .btn-wish-list {
+        max-width: 100%;
+    }
+
+    .btn.btn-theme-default {
+        background-color: $btn-theme-default-bg;
+        border-color: $btn-theme-default-border;
+        color: $btn-theme-default-color;
+        border-width: 2px;
+
+        &:hover,
+        &:focus {
+            background-color: $btn-theme-default-bg-hover;
+            border-color: $btn-theme-default-border-hover;
+            color: $btn-theme-default-color-hover;
+            border-radius: 0;
+            border-width: 2px;
+        }
+    }
+
+    .btn.btn-wish-list,
+    .btn.btn-wish-list {
+        color: $btn-wishlist-color;
+        background-color: $btn-wishlist-bg;
+        border-color: $btn-wishlist-bg;
+    }
+
+    .btn.btn-wish-list:hover,
+    .btn.btn-wish-list:focus {
+        color: $btn-wishlist-color;
+        background-color: $btn-wishlist-bg;
+        border-color: $btn-wishlist-bg;
+    }
+
+    .btn.btn-theme.btn-theme-transparent.active i {
+        color: $btn-wishlist-color;
+        font-weight: 600;
+    }
+
+    .btn.btn-theme.btn-theme-transparent.btn-wish-list:not(.active) i {
+        color: $btn-wishlist-color;
+    }
+
+    .btn.btn-theme:active, .btn.btn-theme:focus {
+        border-width: 2px;
+    }
+
+    .btn-primary {
+        background-color: $btn-theme-bg-hover;
+        border-color: $btn-theme-border-hover;
+        color: $btn-theme-color-hover;
+
+        &:hover,
+        &:focus {
+            background-color: $btn-theme-bg-hover;
+            border-color: $btn-theme-border-hover;
+            color: $btn-theme-color-hover;
+        }
+    }
+
+    .btn.dropdown-toggle {
+        border-color: #000;
+    }
+
+    .btn.dropdown-toggle:hover,
+    .btn.dropdown-toggle:focus {
+        border-color: $main-color;
+    }
+
+    .dropdown-menu {
+        border-color: #000;
+        border-radius: 0;
+    }
+
+    &.product-category .side-categories .widget-content ul.children li {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .dropdown-menu>.active>a {
+        background-color: $main-color;
+        color: #fff;
+    }
+
+    .mobile_filter_button {
+        display: none !important;
+    }
+}
