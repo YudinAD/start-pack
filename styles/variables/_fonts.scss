@@ -1,4 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@500;600;700&family=Lato:wght@700&display=swap');
 
 $fs-text-main: 16px;
+$fw-text-main: 400;
 $main-font: '';
+
+//SECTION TITLE
+
+$section-title-fw: 500;
+$section-title-fs: 26px;
+$section-title-lh: 31px;
+
+//FOOTER WIDGET TITLE
+
+$footer-widgets-title-fs: 18px;
+$footer-widgets-title-lh: 21px;
+$footer-widgets-title-fw: 700;
+$footer-widgets-title-text-transform: uppercase;
+
+//FOOTER WIDGET LINKS
+
+$footer-links-fs: 14px;
+$footer-links-lh: 17px;
+$footer-links-fw: 400;

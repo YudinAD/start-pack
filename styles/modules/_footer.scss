@@ -11,22 +11,22 @@
 
     footer.footer {
         border-top: none;
-        background-color: #fff;
+        background-color: $footer-background;
     }
 
     .footer-widgets {
-        background-color: transparent;
+        background-color: $footer-widgets-background;
         padding: 0;
-        border-bottom: 1px solid #000;
-        border-top: 1px solid #000;
+        border-bottom: 1px solid $footer-widgets-border-color;
+        border-top: 1px solid $footer-widgets-border-color;
 
         .widget-categories ul li a {
             color: $links-color;
             padding-left: 0;
             margin-bottom: 5px;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 17px;
+            font-weight: $footer-links-fw;
+            font-size: $footer-links-fs;
+            line-height: $footer-links-lh;
         }
 
         .widget-categories ul li+li {
@@ -35,18 +35,18 @@
 
         .widget-categories a:hover,
         .widget-categories a:focus {
-            color: $links-hover-color !important;
+            color: $footer-links-hover-color !important;
         }
 
         .widget-title {
-            color: $main-color;
-            font-size: 16px;
-            line-height: 19px;
-            font-weight: 700;
+            color: $footer-widgets-title-color;
+            font-size: $footer-widgets-title-fs;
+            line-height: $footer-widgets-title-lh;
+            font-weight: $footer-widgets-title-fw;
             margin-bottom: 25px;
             padding-bottom: 0;
         
-            text-transform: uppercase;
+            text-transform: $footer-widgets-title-text-transform;
         }
         
         .widget-title::before {
@@ -61,21 +61,11 @@
             justify-content: space-between;
 
             >div {
-                border-right: 1px solid #000;
-                border-left: 1px solid #000;
                 padding-top: 50px;
                 padding-bottom: 50px;
                 padding-left: 30px;
                 flex: 0 0 33%;
                 max-width: 33%;
-
-                &:first-child {
-                    border-right: none;
-                }
-
-                &:last-child {
-                    border-left: none;
-                }
             }
         }
     }
@@ -129,15 +119,27 @@
         margin-top: 30px;
 
         li a i {
-            color: $links-color;
+            color: $footer-icons-color;
             font-size: 25px;
         }
 
         li a:hover i,
         li a:focus i {
-            color: $main-color;
-            font-weight: 600;
+            color: $footer-icons-hover-color;
         }
+    }
+
+    .footer .copyright_row {
+        width: 100%;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+    .footer-meta .payments {
+        max-width: 100%;
+        width: 337px;
     }
 
     @media (max-width: 992px) {
@@ -164,7 +166,6 @@
                 max-width: 100%;
                 border-right: none;
                 border-left: none;
-                border-bottom: 1px solid #000;
                 border-collapse: collapse;
                 padding-top: 30px;
                 padding-bottom: 30px;

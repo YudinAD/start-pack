@@ -36,8 +36,8 @@ const styleMobileNav = (params) => {
     //INSERT MOBILE NAV TEL
     //INSERT MOBILE NAV LOGIN
     try {
-        if (params.addLoginBtn) mobileNav.insertAdjacentHTML('afterbegin', MOBILE_NAV_TEL_HTML);
-        if (params.addTel) mobileNav.insertAdjacentHTML("beforeend", MOBILE_NAV_LOGIN_HTML);
+        if (params.addTel) mobileNav.insertAdjacentHTML('afterbegin', MOBILE_NAV_TEL_HTML);
+        if (params.addLoginBtn) mobileNav.insertAdjacentHTML("beforeend", MOBILE_NAV_LOGIN_HTML);
     } catch {}
 
     //REPLACE SEARCH ICON WITH TEXT

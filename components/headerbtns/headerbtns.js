@@ -47,24 +47,28 @@ const addHeaderBtns = (buttons) => {
     } catch {}
 
     //STYLE HEADER SEARCH
-    try {
-        searchBtn.innerHTML = HEADER_SEARCH_SVG;
+    if (buttons.search) {
+        try {
+            searchBtn.innerHTML = HEADER_SEARCH_SVG;
 
-        const handleBodyClick = (e) => {
-            if (!e.target.closest('#search')) {
-                searchDiv.classList.remove('active');
-                document.body.removeEventListener('click', handleBodyClick);
-            }
-        };
+            const handleBodyClick = (e) => {
+                if (!e.target.closest('#search')) {
+                    searchDiv.classList.remove('active');
+                    document.body.removeEventListener('click', handleBodyClick);
+                }
+            };
 
-        searchBtn.addEventListener('click', () => {
-            searchDiv.classList.add('active');
-            searchInput.click();
+            searchBtn.addEventListener('click', () => {
+                searchDiv.classList.add('active');
+                searchInput.click();
 
-            document.body.addEventListener('click', handleBodyClick);
-        })
-    } catch {}
+                document.body.addEventListener('click', handleBodyClick);
+            })
+        } catch {}
+    }
 };
+
+//ВЫБИРАЕМ ИКОНКИ ЛОГИНА / КНОПКИ
 
 //LOGIN TYPE 1 - Логин в круге, часто применяется, пример (https://maras.ru/)
 //LOGIN TYPE 2 - Логин голова-круг + полукруг без нижней черты (как в https://blessd.moscow)

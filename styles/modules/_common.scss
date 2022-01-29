@@ -1,12 +1,11 @@
 #home {
-    max-width: 1920px;
     min-width: 320px;
     font-family: $main-font, sans-serif;
 
     a, p, span {
         font-family: $main-font, sans-serif;
         font-size: $fs-text-main;
-        font-weight: 500;
+        font-weight: $fw-text-main;
     }
 
     a {
@@ -28,16 +27,18 @@
     .section-title {
         height: auto;
         width: 100%;
+        text-align: left;
+        padding-left: 20px;
 
         span {
             font-style: normal;
-            font-weight: 700;
-            font-size: 32px;
-            line-height: 28px;
+            font-weight: $section-title-fw;
+            font-size: $section-title-fs;
+            line-height: $section-title-lh;
+            margin-left: 0;
         
-            text-align: center;
-            text-transform: none;
-            color: $main-color;
+            text-align: left;
+            color: $section-title-color;
 
             &::before,
             &::after {
@@ -449,7 +450,7 @@
 #home .thumbnail .price_actions .add_to_cart .buttons_added.quantity,
 #home .price_actions .more_details_btn_wrapper .buttons_added.quantity {
     border: 1px solid $main-color !important;
-    border-radius: 20px;
+    border-radius: 0;
     overflow: hidden;
 }
 
@@ -487,8 +488,12 @@
     max-width: 100%;
     min-width: 35px;
     background-color: transparent;
-    border: 1px solid $main-color;
+    border: 1px solid transparent;
     color: $links-color;
+}
+
+#home:not(.checkout-cart) .quantity input.form-control {
+    height: 40px;
 }
 
 .quantity.buttons_added {
@@ -516,6 +521,7 @@
 #home .product-single.product-item .buttons #button-booking,
 #home .product-single.product-item .buttons #button-cart {
     background-color: $main-color;
+    margin-top:0;
 }
 
 #home .product-single.product-item .buttons #button-booking:hover,
