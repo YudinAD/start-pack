@@ -1,33 +1,59 @@
+//GLOBAL
+
 $main-color: '';
 $hover-color: '';
 $links-color: '';
 $links-hover-color: '';
 
-$header-login-fill: '';
-$header-login-stroke: '';
-$header-cart-fill: '';
-$header-cart-stroke: '';
+$section-title-color: #000;
+
+//HEADER ICONS
+
+$header-icons-fill: transparent;
+$header-icons-fill-hover: transparent;
+$header-icons-stroke: #000;
+$header-icons-stroke-hover: $main-color;
+
+//FILL
+
+$header-login-fill: $header-icons-fill;
+$header-cart-fill: $header-icons-fill;
+$header-wishlist-fill: $header-icons-fill;
+$header-search-fill: $header-icons-fill;
+
+$header-login-fill-hover: $header-icons-fill-hover;
+$header-cart-fill-hover: $header-icons-fill-hover;
+$header-wishlist-fill-hover: $header-icons-fill-hover;
+$header-search-fill-hover: $header-icons-fill-hover;
+
+//STROKE
+
+$header-login-stroke: $header-icons-stroke;
+$header-cart-stroke: $header-icons-stroke;
+$header-wishlist-stroke: $header-icons-stroke;
+$header-search-stroke: $header-icons-stroke;
+
+$header-login-stroke-hover: $header-icons-stroke-hover;
+$header-cart-stroke-hover: $header-icons-stroke-hover;
+$header-wishlist-stroke-hover: $header-icons-stroke-hover;
+$header-search-stroke-hover: $header-icons-stroke-hover;
+
+//QUANTITY COLORS
+
 $header-qty-border: '';
 $header-qty-text: '';
 $header-qty-bg: '';
-$header-wishlist-fill: '';
-$header-wishlist-stroke: '';
-$header-search-fill: '';
-$header-search-stroke: '';
-$header-burger-color: '';
 
-$header-login-fill-hover: '';
-$header-login-stroke-hover: '';
-$header-cart-fill-hover: '';
-$header-cart-stroke-hover: '';
-$header-qty-border-hover: '';
-$header-qty-text-hover: '';
-$header-qty-bg-hover: '';
-$header-wishlist-fill-hover: '';
-$header-wishlist-stroke-hover: '';
-$header-search-fill-hover: '';
-$header-search-stroke-hover: '';
-$header-burger-color-hover: '';
+$header-qty-border-hover: $header-qty-border;
+$header-qty-text-hover: $header-qty-text;
+$header-qty-bg-hover: $header-qty-bg;
+
+//BURGER BTN COLOR
+
+$header-burger-color: #000;
+$header-burger-color-hover: $main-color;
+
+//BTNS
 
 $btn-theme-color: '';
 $btn-theme-border: '';
@@ -46,3 +72,17 @@ $btn-theme-default-bg-hover: '';
 $btn-wishlist-color: '';
 $btn-wishlist-border: '';
 $btn-wishlist-bg: '';
+
+//FOOTER
+
+$footer-background: #fff;
+$footer-widgets-background: transparent;
+$footer-widgets-border-color: transparent;
+
+$footer-widgets-title-color: #000;
+
+$footer-links-color: $links-color;
+$footer-links-hover-color: $links-hover-color;
+
+$footer-icons-color: $footer-links-color;
+$footer-icons-hover-color: $footer-links-hover-color;
