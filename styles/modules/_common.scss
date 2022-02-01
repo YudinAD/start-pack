@@ -173,12 +173,6 @@
         .remove_item {
             margin-left: 8px;
         }
-
-        @media (max-width: 459px) {
-            #home.checkout-checkout .seller-comments.form-group textarea {
-                padding-top: 2.5rem;
-            }
-        }
     }
 
     &.checkout-cart {
@@ -224,6 +218,11 @@
         
         .form-group label {
             max-width: 100%;
+            text-transform: none;
+        }
+
+        .seller-comments label {
+            text-transform: uppercase;
         }
         
         #address div:nth-child(3),
@@ -319,12 +318,6 @@
 
     #home .fa.fa-wheelchair {
         color: $main-color;
-    }
-
-    @media (max-width: 500px) {
-        &.checkout-checkout .seller-comments.form-group textarea {
-            padding-top: 2.5rem;
-        }
     }
 
     &.product-category {
@@ -632,4 +625,8 @@
 #home .widget.shop-categories, 
 #home .widget.side-categories {
   border: 1px solid #000;
+}
+
+#home .md-bg-holder {
+    background: transparent;
 }

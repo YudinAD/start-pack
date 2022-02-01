@@ -115,6 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const blockTitles = document.querySelectorAll('.block-title.alt');
         const blockDetails = document.querySelectorAll('.details-box');
         const accountDetails = document.querySelectorAll('.widget.account-details li');
+        const checkoutLabelComments = document.querySelector('#home.checkout-checkout .seller-comments label');
     
         const newsElem = document.evaluate(xpathNews, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
         const emailElem = document.evaluate(xpathEmail, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
@@ -140,6 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (accountDetails) accountDetails.forEach(item => {
             if (item.textContent.trim() === 'Файлы для скачивания') item.remove();
         })
+        if (checkoutLabelComments) checkoutLabelComments.textContent = 'Комментарий к заказу';
     };
 
     const replaceBuyButtons = (text) => {
