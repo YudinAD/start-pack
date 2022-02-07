@@ -107,42 +107,6 @@ document.addEventListener('DOMContentLoaded', () => {
     
         footerSellaviLogo.innerHTML = `<img data-src="${SELLAVI_LOGO}" alt="" class="img-fluid" src="${SELLAVI_LOGO}">`;
     };
-    
-    const editRegistration = () => {
-        const xpathNews = "//legend[text()='Рассылка новостей']";
-        const xpathEmail = "//a[text()='E-Mail рассылка']";
-        const xpathFiles = "//a[text()='Файлы для скачивания']";
-        const blockTitles = document.querySelectorAll('.block-title.alt');
-        const blockDetails = document.querySelectorAll('.details-box');
-        const accountDetails = document.querySelectorAll('.widget.account-details li');
-        const checkoutLabelComments = document.querySelector('#home.checkout-checkout .seller-comments label');
-    
-        const newsElem = document.evaluate(xpathNews, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
-        const emailElem = document.evaluate(xpathEmail, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
-        const filesElem = document.evaluate(xpathFiles, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
-    
-        
-        try {
-            document.querySelectorAll('.add_to_cart button').forEach(btn => {
-                if (btn.textContent.trim().toLowerCase() === 'add to cart') btn.textContent = 'Купить';
-            });
-        } catch (e) {}
-        
-        if (newsElem) newsElem.closest('fieldset').style.display = 'none';
-        if (emailElem) emailElem.closest('li').style.display = 'none';
-        if (filesElem) filesElem.closest('li').style.display = 'none';
-        if (blockTitles) blockTitles.forEach(elem => {
-            if (elem.textContent.trim() === 'Подписка') elem.remove();
-        })
-        if (blockDetails) blockDetails.forEach(elem => {
-            if (elem.textContent.trim() === 'Подписаться или отказаться от рассылки новостей') elem.remove();
-            if (elem.textContent.trim() === 'Файлы для скачивания') elem.remove();
-        });
-        if (accountDetails) accountDetails.forEach(item => {
-            if (item.textContent.trim() === 'Файлы для скачивания') item.remove();
-        })
-        if (checkoutLabelComments) checkoutLabelComments.textContent = 'Комментарий к заказу';
-    };
 
     const replaceBuyButtons = (text) => {
         if (typeof text !== 'string') {

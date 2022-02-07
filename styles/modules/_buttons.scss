@@ -65,9 +65,10 @@
     }
 
     .btn-primary {
-        background-color: $btn-theme-bg-hover;
-        border-color: $btn-theme-border-hover;
-        color: $btn-theme-color-hover;
+        background-color: $btn-theme-bg;
+        border-color: $btn-theme-border;
+        color: $btn-theme-color;
+        margin-right: -15px;
 
         &:hover,
         &:focus {
