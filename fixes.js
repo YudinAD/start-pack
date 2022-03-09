@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         headerSearchBtn.addEventListener('click', () => {
             const searchText = headerSearchInput.value.trim();
 
-                if (searchText) window.open(`/search/?search=${searchText}&description=true`)
+                if (searchText) window.open(`/search/?search=${searchText}&description=true`, '_blank')
                 else headerSearchInput.click()
         });
     } catch (e) { console.log(e) }

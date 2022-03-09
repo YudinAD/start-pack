@@ -4,21 +4,6 @@
             justify-content: center;
         }
     }
-
-    .latest-section .section-title {
-        align-items: center;
-        display: flex;
-
-        @media (max-width: 592px) {
-            align-items: flex-start;
-
-            span {
-                max-width: 239px;
-                margin-bottom: 16px;
-                font-size: 18px;
-            }
-        }
-    }
     
     &:not(.product-product) .product-item {
         border: none;
@@ -45,10 +30,11 @@
     }
 
     .add_to_cart {
+        height: 35px;
         >button {
             background-color: $main-color !important;
             border-color: $main-color !important;
-            color: $links-color !important;
+            color: #fff !important;
             border: 1px solid;
             text-transform: none;
             font-size: 14px;
@@ -60,8 +46,8 @@
             &:hover,
             &:focus {
                 background-color: transparent !important;
-                color: $links-color !important;
-                border-color: $links-color !important;
+                color: $hover-color !important;
+                border-color: $hover-color !important;
             }
 
             i {
@@ -70,21 +56,18 @@
         }
 
         .buttons_added.quantity {
-            height: 35px;
             align-items: center;
         }
     }
 
     .thumbnail {
-        padding: 0 7px;
-        flex-flow: row wrap;
-
         .caption {
             order: 1;
 
             &.text-center {
                 text-align: left !important;
                 width: 100%;
+                margin-bottom: 10px;
 
                 h4 {
                     justify-content: flex-start !important;
@@ -101,6 +84,7 @@
             max-width: 100%;
             width: 100%;
             margin: 0 auto;
+            margin-top: auto;
 
             .spinner-grow {
                 display: none;
@@ -111,7 +95,18 @@
             order: 4;
             margin-top: auto;
             align-items: center;
-            width: 50%;
+            width: 100%;
+            flex-wrap: nowrap;
+
+            .price {
+                display: block;
+                width: 50%;
+            }
+
+            .add_to_cart {
+                width: 50%;
+                margin-bottom: 0;
+            }
         }
 
         .caption-title {
@@ -160,14 +155,11 @@
         align-items: center;
         height: 35px;
         text-align: left;
+        display: none !important;
     }
 
     .wrapper-out-of-stock {
         top: 0 !important;
-    }
-
-    .upper_price_actions .price {
-        text-align: left;
     }
 
     &.product-product {

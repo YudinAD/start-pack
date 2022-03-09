@@ -9,6 +9,8 @@
         background-color: $btn-theme-bg;
         border-color: $btn-theme-border;
         color: $btn-theme-color;
+        justify-content: center; 
+        border-width: 1px;
 
         &:hover, &:focus {
             background-color: $btn-theme-bg-hover;
@@ -25,7 +27,7 @@
         background-color: $btn-theme-default-bg;
         border-color: $btn-theme-default-border;
         color: $btn-theme-default-color;
-        border-width: 2px;
+        border-width: 1px;
 
         &:hover,
         &:focus {
@@ -33,7 +35,7 @@
             border-color: $btn-theme-default-border-hover;
             color: $btn-theme-default-color-hover;
             border-radius: 0;
-            border-width: 2px;
+            border-width: 1px;
         }
     }
 
@@ -42,18 +44,17 @@
         color: $btn-wishlist-color;
         background-color: $btn-wishlist-bg;
         border-color: $btn-wishlist-bg;
+        font-weight: 200;
     }
 
     .btn.btn-wish-list:hover,
     .btn.btn-wish-list:focus {
-        color: $btn-wishlist-color;
         background-color: $btn-wishlist-bg;
         border-color: $btn-wishlist-bg;
     }
 
     .btn.btn-theme.btn-theme-transparent.active i {
-        color: $btn-wishlist-color;
-        font-weight: 600;
+        color: $main-color !important;
     }
 
     .btn.btn-theme.btn-theme-transparent.btn-wish-list:not(.active) i {
@@ -61,7 +62,7 @@
     }
 
     .btn.btn-theme:active, .btn.btn-theme:focus {
-        border-width: 2px;
+        border-width: 1px;
     }
 
     .btn-primary {
@@ -87,11 +88,6 @@
         border-color: $main-color;
     }
 
-    .dropdown-menu {
-        border-color: #000;
-        border-radius: 0;
-    }
-
     &.product-category .side-categories .widget-content ul.children li {
         padding-top: 15px;
         padding-bottom: 15px;
@@ -104,5 +100,28 @@
 
     .mobile_filter_button {
         display: none !important;
+    }
+
+    .btn-info {
+        background-color: $btn-theme-bg;
+        color: #fff !important;
+        border-color: $btn-theme-border;
+
+        &:hover, &:focus {
+            background-color: $btn-theme-bg-hover;
+            border-color: $btn-theme-border-hover;
+        }
+    }
+
+    .btn-danger {
+        background-color: $btn-theme-default-bg;
+        color: $main-color;
+        border-color: $main-color;
+
+        &:hover, &:focus {
+            background-color: $btn-theme-default-bg-hover;
+            border-color: $btn-theme-default-border-hover;
+            color: $btn-theme-default-color-hover;
+        }
     }
 }

@@ -1,0 +1,148 @@
+#home .wrapper .header .header-wrapper .header-search #search_results>.results_text>a {
+    border-color: $main-color;
+    color: $main-color;
+}
+
+#home #search_results .price {
+    display: none;
+}
+
+#home .wrapper .header .header-wrapper .header-search #search_results>a .img,
+#home.bottom-nav-enabled nav.mobile_bottom_nav>ul.mobile_side_nav_menu li.bottom-nav-search #mobile_search_results>a .img {
+    width: 100px;
+    flex: 0;
+    margin-right: 10px;
+}
+
+#home .header .header-wrapper .header-search #search_results>a .item_data {
+    min-width: 340px;
+    max-width: 340px;
+    flex: 1;
+}
+
+#home .wrapper .header .header-wrapper .header-search #search_results>a .add_to_cart {
+    flex: 1;
+    max-width: 184px;
+    width: 100%;
+    padding: 0;
+}
+
+#home .wrapper .header .header-wrapper .header-search #search_results {
+    min-width: max-content;
+}
+
+#home .wrapper .header .header-wrapper .header-search #search_results>a {
+    align-items: center;
+}
+
+#home .checkbox.customized label {
+    z-index: 1;
+}
+
+#home .checkbox.customized .check {
+    z-index: 1;
+}
+
+#home .wrapper .header .header-wrapper .header-search #search_results>a .item_data .name,
+#home.bottom-nav-enabled nav.mobile_bottom_nav>ul.mobile_side_nav_menu li.bottom-nav-search #mobile_search_results>a .item_data .name {
+    font-size: 13px;
+}
+
+#home.bottom-nav-enabled nav.mobile_bottom_nav>ul.mobile_side_nav_menu li.bottom-nav-search #mobile_search_results .add_to_cart>button {
+    width: 130px;
+}
+
+#home.bottom-nav-enabled nav.mobile_bottom_nav>ul.mobile_side_nav_menu li.bottom-nav-search #mobile_search_results>a .item_data .name {
+    word-wrap: break-word;
+}
+
+#home .wrapper .header .header-wrapper .header-search #search_results .add_to_cart>button {
+    width: 150px;
+    align-self: flex-end;
+    justify-content: center;
+}
+
+#home .wrapper .header .header-wrapper .header-search #search_results .add_to_cart>button:hover {
+    background-color: $main-color;
+}
+
+#home .wrapper .header .header-wrapper .header-search #search_results .add_to_cart>button i {
+    margin-left: 0;
+}
+
+/*QUANTITY BTNS*/
+
+#home #mobile_search_results .add_to_cart .buttons_added.quantity,
+#home #search_results .add_to_cart .buttons_added.quantity,
+#home .thumbnail .price_actions .add_to_cart .buttons_added.quantity,
+#home .price_actions .more_details_btn_wrapper .buttons_added.quantity {
+    border: 1px solid $main-color !important;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+#home #mobile_search_results .add_to_cart .buttons_added.quantity i,
+#home #mobile_search_results .add_to_cart .buttons_added.quantity input.minus,
+#home #mobile_search_results .add_to_cart .buttons_added.quantity input.plus,
+#home #mobile_search_results .add_to_cart .buttons_added.quantity input.quantity_field,
+#home #search_results .add_to_cart .buttons_added.quantity i,
+#home #search_results .add_to_cart .buttons_added.quantity input.minus,
+#home #search_results .add_to_cart .buttons_added.quantity input.plus,
+#home #search_results .add_to_cart .buttons_added.quantity input.quantity_field {
+    color: #000 !important;
+    min-width: 50px;
+    transition: color 0.2s ease-in;
+
+    &:hover, &:focus {
+        color: $main-color !important;
+    }
+}
+
+#home.product-product .product-single.product-item .buttons .quantity {
+    border-color: $main-color;
+}
+
+#home.product-product .product-single .mobile_wishlist {
+    bottom: 50px;
+
+    .btn.btn-theme.btn-wish-list {
+        background-color: transparent;
+        border-radius: 0;
+    }
+}
+
+#home .quantity input.form-control {
+    width: 100%;
+    max-width: 100%;
+    min-width: 35px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: $links-color;
+}
+
+#home:not(.checkout-cart) .quantity input.form-control {
+    height: 40px;
+}
+
+.quantity.buttons_added {
+    border: 0;
+}
+
+#home .quantity_key {
+    max-width: 75px;
+    width: 100%;
+    text-align: center;
+    background-color: transparent !important;
+    color: $links-color !important;
+    opacity: 1;
+    transition: color 0.2s ease-in;
+    padding: 14px;
+
+    &:hover, &:focus {
+        color: $main-color !important;
+    }
+}
+
+#home .wrapper .header .header-wrapper .header-search #search_results > a .item_data .name {
+    color: #000;
+}

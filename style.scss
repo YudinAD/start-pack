@@ -1,18 +1,21 @@
 @import 'styles/variables/fonts';
 @import 'styles/variables/colors';
+@import 'styles/variables/other';
+
 @import 'styles/modules/common';
 @import 'styles/modules/buttons';
+
 @import 'styles/modules/header';
 @import 'styles/modules/nav';
 @import 'styles/modules/banners';
-@import 'styles/modules/advantages';
 @import 'styles/modules/categories';
 @import 'styles/modules/products';
-@import 'styles/modules/about';
 @import 'styles/modules/footer';
 
-@import 'styles/modules/feedback';
-@import 'styles/modules/contacts';
+@import 'styles/modules/product-page';
+@import 'styles/modules/search-results';
+
+// @import 'styles/modules/advantages';
 
 // @import 'components/headerbtns/headerbtns';
 // @import 'components/headerbtns/search-absolute';
