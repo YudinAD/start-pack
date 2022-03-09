@@ -1,14 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Jura:wght@500;600;700&family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap'); - также часто используется
 
 $fs-text-main: 16px;
 $fw-text-main: 400;
-$main-font: '';
+$main-font: 'Montserrat', sans-serif;
 
 //SECTION TITLE
 
 $section-title-fw: 500;
 $section-title-fs: 26px;
 $section-title-lh: 31px;
+$section-title-fs-mob: 22px;
+$section-title-lh-mob: 26px;
+$section-title-text-transform: none;
 
 //FOOTER WIDGET TITLE
 
