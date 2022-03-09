@@ -1,3 +1,5 @@
+const SHOP_NUMBER = '';
+
 document.addEventListener('DOMContentLoaded', () => {
     const styleHeader = () => {
         const telNumElem = document.querySelector('.widget-categories a[href^="tel"]');
@@ -78,9 +80,20 @@ document.addEventListener('DOMContentLoaded', () => {
     //Добавить Sellavi Logo.
     
     const styleFooter = () => {
-        const SELLAVI_LOGO = '';
+        const SELLAVI_LOGO = `https://sellavi-russia-dev.github.io/${SHOP_NUMBER}/images/sellavi-logo.svg`;
+        const PAYMENTS_HTML = `
+        <div class="col-sm-6">
+            <div class="payments">
+                <div>
+                    <img src="https://sellavi-russia-dev.github.io/${SHOP_NUMBER}/images/payments.png" class="img-fluid" alt=""/>
+                </div>
+            </div>
+        </div>
+        `;
         const footerSellaviLogo = document.querySelector('#sellavi_logo');
         const col3 = document.querySelector('.footer-widgets .row>div:last-child ul');
+
+        const copyright = document.querySelector('.footer .copyright_row');
     
         //REMOVE UNNECESSARY LINK IN THIRD COL
     
@@ -91,6 +104,8 @@ document.addEventListener('DOMContentLoaded', () => {
         //REPLACE SELLAVI LOGO
     
         footerSellaviLogo.innerHTML = `<img data-src="${SELLAVI_LOGO}" alt="" class="img-fluid" src="${SELLAVI_LOGO}">`;
+
+        copyright.insertAdjacentHTML('beforeend', PAYMENTS_HTML);
     };
     
     styleHeader();
