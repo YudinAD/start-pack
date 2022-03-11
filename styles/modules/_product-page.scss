@@ -10,7 +10,9 @@
 #home .product-single.product-item .buttons #button-cart:hover,
 #home .product-single.product-item .buttons #button-booking:focus,
 #home .product-single.product-item .buttons #button-cart:focus {
-    background-color: $hover-color;
+    background-color: #fff;
+    color: $main-color;
+    border-color: $main-color;
 }
 
 #home .social-icons li a {
@@ -22,12 +24,33 @@
     border-top-color: #e9e9e9;
 }
 
-#home.product-product .btn.btn-theme.btn-wish-list:hover,
-#home.product-product .btn.btn-theme.btn-wish-list:focus {
-    border-color: $main-color;
-    background-color: $main-color;
+#home.product-product .btn.btn-theme.btn-wish-list,
+#home.product-product .btn.btn-theme.btn-wish-list {
+    border-color: transparent !important;
+    background-color: transparent;
 
     i {
-        color: #fff !important;
+        font-size: 25px;
+        color: $main-color !important;
+        font-weight: 300;
     }
 }
+
+#home.product-product .btn.btn-theme.btn-wish-list:hover,
+#home.product-product .btn.btn-theme.btn-wish-list:focus {
+    border-color: transparent;
+    background-color: transparent;
+
+    i {
+        color: $main-color !important;
+        font-weight: 700;
+    }
+}
+
+#home.product-product {
+    #button-cart {
+        .fa-shopping-cart {
+            display: none;
+        }
+    }
+} 

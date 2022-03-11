@@ -576,3 +576,7 @@
         color: $main-color;
     }
 }
+
+#home .checkout-progress-bar .step-number.active {
+    background-color: $main-color;
+}

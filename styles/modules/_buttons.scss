@@ -1,11 +1,11 @@
 #home {
     .btn:not(.btn-wish-list) {
-        border-radius: 0;
+        border-radius: $btn-border-radius;
     }
 
     .btn.btn-theme:not(.btn-wish-list) {
         font-weight: 400;
-        border-radius: 0;
+        border-radius: $btn-border-radius;
         background-color: $btn-theme-bg;
         border-color: $btn-theme-border;
         color: $btn-theme-color;
@@ -34,7 +34,7 @@
             background-color: $btn-theme-default-bg-hover;
             border-color: $btn-theme-default-border-hover;
             color: $btn-theme-default-color-hover;
-            border-radius: 0;
+            border-radius: $btn-border-radius;
             border-width: 1px;
         }
     }

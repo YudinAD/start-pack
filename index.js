@@ -13,10 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
         //Нужный код из компонентов пока копипастить сюда, ненужный - убирать
     
         // addHeaderBtns({
-        //     login: HEADER_LOGIN_BTN,
-        //     cart: HEADER_CART_SVG,
+        //     login: true,
+        //     cart: true,
         //     wishlist: true,
-        //     search: true
+        //     search: false
         // });
     
         //END HEADER BTNS COMPONENT
@@ -111,7 +111,6 @@ document.addEventListener('DOMContentLoaded', () => {
     styleHeader();
     styleFooter();
     //addPopup(popupHTML, popupTitle);
-    //removeCheckoutFields();
     
     // if (document.querySelector('#home.common-home')) {
     //     banners();

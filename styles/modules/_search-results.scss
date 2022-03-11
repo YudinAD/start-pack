@@ -15,7 +15,7 @@
 }
 
 #home .header .header-wrapper .header-search #search_results>a .item_data {
-    min-width: 340px;
+    min-width: 200px;
     max-width: 340px;
     flex: 1;
 }
@@ -25,6 +25,7 @@
     max-width: 184px;
     width: 100%;
     padding: 0;
+    border-radius: $btn-border-radius;
 }
 
 #home .wrapper .header .header-wrapper .header-search #search_results {
@@ -50,6 +51,7 @@
 
 #home.bottom-nav-enabled nav.mobile_bottom_nav>ul.mobile_side_nav_menu li.bottom-nav-search #mobile_search_results .add_to_cart>button {
     width: 130px;
+    border-radius: $btn-border-radius;
 }
 
 #home.bottom-nav-enabled nav.mobile_bottom_nav>ul.mobile_side_nav_menu li.bottom-nav-search #mobile_search_results>a .item_data .name {
@@ -58,6 +60,7 @@
 
 #home .wrapper .header .header-wrapper .header-search #search_results .add_to_cart>button {
     width: 150px;
+    border-radius: $btn-border-radius;
     align-self: flex-end;
     justify-content: center;
 }
@@ -77,7 +80,7 @@
 #home .thumbnail .price_actions .add_to_cart .buttons_added.quantity,
 #home .price_actions .more_details_btn_wrapper .buttons_added.quantity {
     border: 1px solid $main-color !important;
-    border-radius: 0;
+    border-radius: $btn-border-radius;
     overflow: hidden;
 }
 
