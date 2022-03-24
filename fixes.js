@@ -10,8 +10,17 @@ document.addEventListener('DOMContentLoaded', () => {
             const searchText = headerSearchInput.value.trim();
 
                 if (searchText) window.open(`/search/?search=${searchText}&description=true`, '_self')
-                else headerSearchInput.click()
+                else {
+                    headerSearchInput.click()
+                    if (!headerSearch.classList.contains('opened')) headerSearch.classList.add('opened')
+                }
         });
+
+        if (document.querySelector('.product-search')) {
+            try {
+                document.querySelector('#search .form-control').value = '';
+            } catch {}
+        }
     } catch (e) { console.log(e) }
 
     //REMOVE UNNECESSARY STEP-WORDS IN CHECKOUT
@@ -91,4 +100,12 @@ document.addEventListener('DOMContentLoaded', () => {
             if (btn.textContent.toLowerCase().includes('cart')) btn.textContent = 'Купить';
         });
     } catch (e) { console.log(e) }
+
+    //RENAME FILTER BTN
+
+    try {
+        const btn = document.querySelector('.filter_price_button');
+
+        if (btn.textContent.toLowerCase().includes('filter')) btn.textContent = 'Применить фильтр';
+    } catch (e) {console.log(e)}
 });
