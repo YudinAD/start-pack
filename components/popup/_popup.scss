@@ -45,7 +45,8 @@
         justify-content: center;
         z-index: 15;
         max-height: 600px;
-        max-width: 100%;
+        max-width: 853px;
+        height: 100%;
         background-position: bottom right;
         background-repeat: no-repeat;
       
@@ -69,8 +70,6 @@
         display: flex;
         align-items: center;
         text-transform: uppercase;
-      
-        color: var(--main-color);
       }
       
       .popup-description {
@@ -164,18 +163,6 @@
       
         .popup-form__input:first-child {
           margin-right: 0;
-        }
-      
-        .product-layout .thumbnail .media,
-        .thumbnail .media {
-          min-height: 280px;
-        }
-      }
-      
-      @media (min-width: 992px) {
-        .popup-content {
-          max-width: 853px;
-          height: 100%;
         }
       }
       

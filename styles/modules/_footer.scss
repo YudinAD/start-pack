@@ -27,6 +27,11 @@
             font-weight: $footer-links-fw;
             font-size: $footer-links-fs;
             line-height: $footer-links-lh;
+
+            @media (max-width: 592px) {
+                font-size: 14px;
+                line-height: 16px;
+            }
         }
 
         .widget-categories ul li+li {
@@ -47,6 +52,11 @@
             padding-bottom: 0;
         
             text-transform: $footer-widgets-title-text-transform;
+
+            @media (max-width: 592px) {
+                font-size: 18px;
+                line-height: 21px;
+            }
         }
         
         .widget-title::before {
@@ -116,7 +126,7 @@
     }
 
     .social-icons {
-        margin-top: 30px;
+        margin-top: 20px;
 
         li a i {
             color: $footer-icons-color;
@@ -164,6 +174,8 @@
         
         .footer .footer-widgets .row {
             flex-direction: column;
+            padding-top: 40px;
+            padding-bottom: 40px;
 
             >div {
                 flex: 0 0 100%;
@@ -171,8 +183,8 @@
                 border-right: none;
                 border-left: none;
                 border-collapse: collapse;
-                padding-top: 30px;
-                padding-bottom: 30px;
+                padding-top: 20px;
+                padding-bottom: 20px;
             }
         }
     
