@@ -1,0 +1,128 @@
+#home.account-register {
+    legend {
+        position: relative;
+        left: 20px;
+    }
+    
+    fieldset#account,
+    fieldset#address,
+    fieldset#address+fieldset {
+        background-color: rgba(0, 0, 0, 0.05);
+        margin-bottom: 30px;
+    }
+    
+    fieldset#account,
+    fieldset#address,
+    fieldset#address+fieldset {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .form-group label {
+        max-width: 100%;
+        text-transform: none;
+    }
+
+    .seller-comments label {
+        text-transform: uppercase;
+    }
+    
+    #address div:nth-child(3),
+    #address div:nth-child(4) {
+        order: -5;
+        justify-content: space-around;
+    }
+    
+    #address>div:last-child {
+        order: -2;
+    }
+    
+    #address>div:nth-last-child(2) {
+        order: -3;
+    }
+    
+    #address div:nth-child(5) {
+        order: 1;
+    }
+    
+    fieldset#address>div,
+    fieldset#address+fieldset .form-group {
+        flex: 1 0 50%;
+    }
+    
+    fieldset#address .form-group.col-10 {
+        max-width: 50%;
+    }
+    
+    @media (max-width: 510px) {
+        fieldset .form-group:not(.col-10) {
+            min-width: 100%;
+        }
+    
+        fieldset#address>div:nth-child(3) {
+            min-width: 100%;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        fieldset#account .form-group.required {
+            flex: 1 0 50%;
+        }
+    
+        fieldset#address>div,
+        fieldset#address+fieldset .form-group {
+            flex: 1 0 33%;
+        }
+    
+        #address div:nth-child(3),
+        #address div:nth-child(5) {
+            min-width: 66%;
+        }
+    }
+    
+    @media (min-width: 576px) {
+        .col-sm-10 {
+            max-width: 100%;
+        }
+    }
+    
+    .form-horizontal fieldset:last-child>.form-group .col-md-12 {
+        display: flex;
+        align-items: center;
+    }
+    
+    .form-horizontal fieldset:last-child>.form-group .col-md-12 .check {
+        top: unset !important;
+    }
+    
+    @media (min-width: 576px) {
+        .form-horizontal fieldset:last-child>.form-group {
+            display: flex;
+        }
+    
+        .form-horizontal fieldset:last-child>.form-group .col-md-12 {
+            flex: 0 1 100%;
+        }
+    
+        .form-horizontal fieldset:last-child>.form-group .col-md-12 label {
+            width: max-content;
+        }
+    
+        .form-horizontal fieldset:last-child>.form-group .col-sm-12 {
+            flex: 0 1 100%;
+        }
+    }
+    
+    .wrapper>.container {
+        padding-bottom: 40px;
+    }
+
+    span.select2-container--default .select2-selection--single {
+        height: 40px;
+    }
+
+    span.select2-container--default .select2-selection--single .select2-selection__rendered {
+        line-height: 40px;
+    }
+}

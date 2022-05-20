@@ -4,18 +4,25 @@
 
 @import 'styles/modules/common';
 @import 'styles/modules/buttons';
+@import 'styles/modules/account-register';
+@import 'styles/modules/account';
+@import 'styles/modules/checkout-cart';
+@import 'styles/modules/checkout-checkout';
 
 @import 'styles/modules/header';
 @import 'styles/modules/nav';
 @import 'styles/modules/banners';
 @import 'styles/modules/categories';
-@import 'styles/modules/products';
 @import 'styles/modules/footer';
 
+@import 'styles/modules/product-category';
 @import 'styles/modules/product-page';
+@import 'styles/modules/products';
+
 @import 'styles/modules/search-results';
 
 // @import 'styles/modules/advantages';
+// @import 'styles/modules/rating';
 
 // @import 'components/headerbtns/headerbtns';
 // @import 'components/headerbtns/search-absolute';

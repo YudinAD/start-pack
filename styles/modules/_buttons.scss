@@ -81,6 +81,7 @@
 
     .btn.dropdown-toggle {
         border-color: #000;
+        text-align: left;
     }
 
     .btn.dropdown-toggle:hover,
@@ -104,10 +105,11 @@
 
     .btn-info {
         background-color: $btn-theme-bg;
-        color: #fff !important;
+        color: $btn-theme-color !important;
         border-color: $btn-theme-border;
 
         &:hover, &:focus {
+            color: $btn-theme-color-hover !important;
             background-color: $btn-theme-bg-hover;
             border-color: $btn-theme-border-hover;
         }
@@ -115,8 +117,8 @@
 
     .btn-danger {
         background-color: $btn-theme-default-bg;
-        color: $main-color;
-        border-color: $main-color;
+        color: $btn-theme-default-color;
+        border-color: $btn-theme-default-border;
 
         &:hover, &:focus {
             background-color: $btn-theme-default-bg-hover;

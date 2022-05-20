@@ -1,0 +1,31 @@
+#home.account-account {
+    .block-title.alt {
+        text-transform: none;
+    }
+
+    .details-wrap li {
+        padding-left: 10px;
+    }
+
+    .block-title.alt {
+        text-transform: none;
+    }
+
+    .details-wrap li {
+        padding-left: 10px;
+    }
+}
+
+/*ACCOUNT EDIT FIX*/
+#home.account-password,
+#home.account-edit,
+#home.account-address,
+#home.account-order {
+    .float-left {
+        float: left !important;
+    }
+
+    .float-right {
+        float: right !important;
+    }
+}
