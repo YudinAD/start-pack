@@ -23,10 +23,6 @@
         color: #fff;
     }
 
-    .product-single .buttons .quantity .btn:hover {
-        border-radius: 0;
-    }
-
     .product-single .btn.btn-theme.btn-wish-list {
         margin: 0;
         border-color: $main-color;
@@ -41,13 +37,15 @@
 
     .product-single.product-item .buttons #button-booking,
     .product-single.product-item .buttons #button-cart {
-        background-color: $main-color;
+        background-color: $btn-product-bg;
+        color: $btn-product-color;
+        border-color: $btn-product-border-color;
         margin-top:0;
 
         &:hover, &:focus {
-            background-color: #fff;
-            color: $main-color;
-            border-color: $main-color;
+            background-color: $btn-product-bg-hover !important;
+            border-color: $btn-product-border-color-hover !important;
+            color: $btn-product-color-hover !important;
         }
     }
 

@@ -35,7 +35,8 @@
     }
 
     .header-wrapper {
-        .container-fluid {
+        .container-fluid,
+        .container {
             max-width: 1170px;
             display: flex;
             align-items: center;
@@ -63,6 +64,12 @@
             @media(max-width:992px) {
                 height: auto !important;
                 margin-left: auto;
+            }
+
+            @media(max-width: 592px) {
+                img {
+                    max-width: 100%;
+                }
             }
         }
 
