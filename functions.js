@@ -40,3 +40,87 @@ try {
         item.textContent = item.textContent.replace('-', '').trim();
     })
 } catch (e) {console.log(e)}
+
+//REMOVE PLATFORM CART TRIM
+
+cartDescriptionTrim = () => console.log('hi');
+
+//RENAME CART
+
+const renameCart = () => {
+    const cartContent = document.querySelector('#cart+.dropdown-menu .cart-items');
+    const cartBtn = document.querySelector('#button-cart');
+    
+    const config = {
+        childList: true
+    };
+
+    const replaceCartContent = () => {
+        const cartHeader = cartContent.querySelector('.cart-header p');
+        const emptyCartText = cartContent.querySelector('.empty_cart p');
+        const goToCartBtn = cartContent.querySelector('.button-wrapper.cart-button a');
+
+        if (cartHeader) cartHeader.textContent = cartHeader.textContent.replace('Ваша корзина', 'Услуги').replace('товар/ы', 'услуг');
+        if (emptyCartText) emptyCartText.textContent = 'Ваш список услуг пуст';
+        if (goToCartBtn) goToCartBtn.textContent = 'Мой список услуг';
+    };
+
+    if (cartContent) {
+        replaceCartContent();
+        const observer = new MutationObserver(replaceCartContent);
+        observer.observe(cartContent, config);
+    }
+
+    if (document.querySelector('#home.checkout-cart')) {
+        const errorMsg = document.querySelector('.error-page h2');
+        const cartHeading = document.querySelector('h3');
+        const pageTitle = document.querySelector('title');
+        const h1 = document.querySelector('.page-header h1');
+
+        if (errorMsg) errorMsg.textContent = 'Ваш список услуг пуст'
+        if (cartHeading) cartHeading.textContent = 'Ваш список услуг';
+        if (h1) h1.textContent = 'Ваш список услуг';
+
+
+        pageTitle.textContent = pageTitle.textContent.replace('Корзина покупок', 'Ваш список услуг');
+    }
+
+    if (cartBtn) {
+        cartBtn.textContent = 'Оформить заявку';
+    }
+}
+
+//REPLACE PRODUCTS IMG
+
+const replaceProductsImg = () => {
+    try {
+        const products = document.querySelector('.content-area .products');
+        const config = {
+            childList: true
+        };
+        const replaceImgs = () => {
+            const images = document.querySelectorAll('.content-area .products .thumbnail .media img');
+            const productItems = products.querySelectorAll('.product-item');
+
+            productItems.forEach(item => {
+                item.setAttribute('class', 'product-item product-layout col-12 col-sm-6 ltr');
+            });
+            
+            images.forEach(img => {
+                img.setAttribute('data-src', img.src.replace('if_ar_gt_2:1/c_mpad,h_452,w_452,q_100/c_fill,h_452,w_525/if_else/c_pad,h_452,q_100,w_452/if_end/', '').replace('/e_blur:2000,q_20', ''));
+                img.setAttribute('src', img.src.replace('if_ar_gt_2:1/c_mpad,h_452,w_452,q_100/c_fill,h_452,w_525/if_else/c_pad,h_452,q_100,w_452/if_end/', '').replace('/e_blur:2000,q_20', ''));
+            })
+        };
+        
+        try {
+            replaceImgs()
+        } catch(e) {
+            console.log(e);
+        }
+
+        if (content) {
+            const observer = new MutationObserver(replaceImgs);
+            observer.observe(products, config);
+        }
+    } catch (e) {console.log(e)}
+};

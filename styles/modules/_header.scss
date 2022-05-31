@@ -1,7 +1,7 @@
 #home {
     .wrapper .header {
         border-bottom: none !important;
-        background-color: #fff;
+        background-color: $header-bg;
 
         .logo {
             order: 1;
@@ -126,7 +126,7 @@
             }
 
             &:hover i, &:focus i {
-                color: #FF4A4A;
+                color: $main-color;
             }
 
             @media (max-width: 992px) {
