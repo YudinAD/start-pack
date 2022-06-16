@@ -1,6 +1,25 @@
 #home {
     .btn:not(.btn-wish-list) {
         border-radius: $btn-border-radius;
+        // font-family: '', sans-serif;
+        // font-size: 18px;
+        // line-height: 140%;
+        // font-weight: 400;
+        
+        // span {
+        //     font-family: '', sans-serif;
+        //     font-size: 18px;
+        //     line-height: 140%;
+        //     font-weight: 400;
+        // }
+
+        // @media (max-width: 592px) {
+        //     font-size: 16px;
+
+        //     span {
+        //         font-size: 16px;
+        //     }
+        // }
     }
 
     .btn.btn-theme:not(.btn-wish-list) {
@@ -51,14 +70,21 @@
     .btn.btn-wish-list:focus {
         background-color: $btn-wishlist-bg;
         border-color: $btn-wishlist-bg;
+
+        i {
+            color: $main-color !important;
+            font-weight: 700 !important;
+        }
     }
 
     .btn.btn-theme.btn-theme-transparent.active i {
         color: $main-color !important;
+        font-weight: 700 !important;
     }
 
     .btn.btn-theme.btn-theme-transparent.btn-wish-list:not(.active) i {
         color: $btn-wishlist-color;
+        font-weight: 300;
     }
 
     .btn.btn-theme:active, .btn.btn-theme:focus {

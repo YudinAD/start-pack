@@ -9,12 +9,10 @@
     .product-single .buttons .quantity {
         display: flex;
         margin: 0;
-        margin-right: 10px;
     }
 
     .product-single .buttons .quantity + button {
         margin: 0;
-        margin-right: 10px;
         min-width: 125px;
     }
 
@@ -28,6 +26,7 @@
         border-color: $main-color;
         border-radius: 0;
         border-width: 1px;
+        margin-left: 10px;
     }
 
     .product-single .buttons .quantity .btn i {
@@ -62,7 +61,6 @@
 
         i {
             font-size: 25px;
-            color: $main-color !important;
             font-weight: 300;
         }
 
