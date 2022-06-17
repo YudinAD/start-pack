@@ -2,6 +2,7 @@
     .header_widgets {
         position: static;
         order: 4;
+        flex-wrap: nowrap;
     }
 
     .header_login,
