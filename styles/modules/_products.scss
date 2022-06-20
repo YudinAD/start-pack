@@ -42,7 +42,8 @@
         left: 0;
     }
 
-    .add_to_cart {
+    .add_to_cart,
+    .more_details_btn_wrapper {
         height: 35px;
         >button {
             background-color: $btn-product-bg !important;
@@ -123,7 +124,8 @@
                 width: 50%;
             }
 
-            .add_to_cart {
+            .add_to_cart,
+            .more_details_btn_wrapper {
                 width: 50%;
                 margin-bottom: 0;
             }
