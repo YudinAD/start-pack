@@ -218,3 +218,20 @@
         color: $main-color;
     }
 }
+
+#home.account-forgotten .details-box .buttons {
+    max-width: 200px;
+    margin-left: auto;
+}
+
+#home.account-forgotten .col-sm-9 {
+    margin: 0 auto;
+}
+
+#home .modal .modal-dialog .modal-content .modal-header {
+    flex-direction: row-reverse;
+}
+
+#home .wrapper .sticky-wrapper.is-sticky .header {
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+}

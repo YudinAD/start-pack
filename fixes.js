@@ -108,4 +108,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (btn.textContent.toLowerCase().includes('filter')) btn.textContent = 'Применить фильтр';
     } catch (e) {console.log(e)}
+
+    //MAKE CORRECT TEXT IN INFORMATION-CONTACT CAPTCHA PLACEHOLDER
+
+    if(document.querySelector('.information-contact')) {  
+        try {
+            const catpchaLabel = document.querySelector('label[for="input-captcha"]');
+            const captchaInput = document.getElementById('input-captcha');
+              
+            catpchaLabel.classList.add('d-none');
+            captchaInput.placeholder = 'Введите код в это поле';
+          } catch (e) {console.log(e)}
+        }
 });
