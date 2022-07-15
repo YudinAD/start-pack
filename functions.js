@@ -30,6 +30,53 @@ try {
     nav.insertAdjacentElement('afterbegin', whatsappBtn.cloneNode(true));
 } catch (e) { console.log(e)}
 
+//REMOVE ARROWS IN NAV
+
+try {
+    const divs = document.querySelectorAll(
+        '#home ul.nav.sf-menu>li.flexy>ul>li.megaline>div');
+    divs.forEach(item => {
+        if (!item.querySelector('ul')) item.classList.add('div-no-arrow')
+    })
+} catch (e) {}
+
+//MAKE ADAPTIVE NAV DROPDOWN-MENUS
+
+if (window.matchMedia('(min-width: 992px)').matches) {
+    try {
+        document.querySelectorAll('.sf-menu .megamenu').forEach(item => {
+            const firstList = item.childNodes[3];
+            const secondList = firstList.querySelector('.megaline ul');
+            const distanceToRight = window.innerWidth - item.getBoundingClientRect().left;
+
+            if (distanceToRight < 750) {
+                firstList.style.right = '0';
+                secondList.style.cssText = 'right: auto; left: -100%;';
+            } else {
+                firstList.style.right = '';
+                secondList.style.cssText = '';
+            }
+            })
+    } catch(e) {console.log(e)}
+    
+    window.addEventListener('resize', () => {
+        try {
+            document.querySelectorAll('.sf-menu .megamenu').forEach(item => {
+                const firstList = item.childNodes[3];
+                const secondList = firstList.querySelector('.megaline ul');
+                const distanceToRight = window.innerWidth - item.getBoundingClientRect().left;
+
+                if (distanceToRight < 750) {
+                    firstList.style.right = '0';
+                    secondList.style.cssText = 'right: auto; left: -100%;';
+                } else {
+                    firstList.style.right = '';
+                    secondList.style.cssText = '';
+                }
+            })
+        } catch(e) {console.log(e)}
+    })
+}
 
 //REMOVE MINUSES IN MOBILE NAV MENU
 
@@ -123,4 +170,27 @@ const replaceProductsImg = () => {
             observer.observe(products, config);
         }
     } catch (e) {console.log(e)}
+};
+
+//REPLACE CATEGORIES IMG
+
+const replaceCategoriesImg = () => {
+    try {
+        const images = document.querySelectorAll('.homefeatured_category .img-bg img');
+
+        images.forEach(img => {
+            img.src = img.src.replace(/(if)(.*)(if_end\/)/gi, '')
+        })
+    } catch {}
+};
+
+//ADD INNER PAGES
+
+const addInnerPages = () => {
+    const path = document.location.pathname;
+
+    if (decodeURI(path) === "/about/") {
+        const contentArea = document.querySelector('.content-area');
+        contentArea.innerHTML = ABOUT_HTML;
+    }
 };

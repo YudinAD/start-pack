@@ -75,12 +75,12 @@ $btn-wishlist-bg: '';
 
 //PRODUCT CARD/PRODUCT PAGE/SEARCH RESULTS BTN COLORS
 
-$btn-product-color: '';
-$btn-product-bg: '';
-$btn-product-border-color: '';
-$btn-product-color-hover: '';
-$btn-product-bg-hover: '';
-$btn-product-border-color-hover: '';
+$btn-product-color: $btn-theme-color;
+$btn-product-bg: $btn-theme-bg;
+$btn-product-border-color: $btn-theme-border;
+$btn-product-color-hover: $btn-theme-color-hover;
+$btn-product-bg-hover: $btn-theme-bg-hover;
+$btn-product-border-color-hover: $btn-theme-border-hover;
 
 //FOOTER
 
